@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #c44e75;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.sidebar {
+    width: 230px;
+    background-color: #fdbfd7;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: #eb3663;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.playlist-title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.playlist-title.active {
+    color: #fd97b5;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.header .info {
+    flex-grow: 1;
+}
+.header h1 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+.header p {
+    margin: 0;
+    color: #ffa3d1;
+}
+.playlist {
+    margin-top: 20px;
+}
+.playlist table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.playlist th,
+.playlist td {
+    padding: 10px;
+    border-bottom: 1px solid #fd97b5;
+    text-align: left;
+}
+.playlist th {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ff7da2;
+}
+.playlist td {
+    font-size: 14px;
+}
+.playlist tr:hover {
+    background-color: #ffffff;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    background-color: #ff719c;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.play-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    color: rgb(255, 162, 178);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sidebar img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.footer img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 0; /* Mengatur gambar menjadi kotak */
+}

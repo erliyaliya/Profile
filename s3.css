@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffafc7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 490px;
+    background-color: #f5f4f2;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 173, 204, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fc75ad;
+    margin-bottom: 15px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.profile-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.profile-section div {
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.profile-section div strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.about-section,
+.bio-section,
+.dislike-section,
+.hobbies-section,
+.pet-section {
+    background-color: #fdc7d7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section h3,
+.dislike-section h3,
+.hobbies-section h3,
+.pet-section h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #fa6fc5;
+}
+
+.about-section p,
+.dislike-section p,
+.hobbies-section p,
+.pet-section p {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.gallery-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-section img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer a {
+    color: #ffa1db;
+    text-decoration: none;
+}
+
+.stories {
+    font-size: 14px;
+    color: #ffa1db;
+}
+
+.stories h3 {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ffa1db;
+}
+
+.stories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stories ul li {
+    margin-bottom: 5px;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.color-palette div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Styles for Button Hyperlink */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6fb5;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #ff85c3;
+}
+
+@media (max-width: 500px) {
+    .profile-section {
+        text-align: center;
+    }
+
+    .profile-section img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .gallery-section {
+        justify-content: space-around;
+    }
+
+    .gallery-section img {
+        width: 70px;
+        height: 70px;
+    }
+}

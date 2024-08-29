@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"type="text/css" href="style.css "
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- <style>
+        body {
+            background-color: #d4e3f2;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #eef3fb;
+            border: 3px solid #a0b6d4;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tab {
+            background-color: #a0b6d4;
+            border-radius: 10px 10px 0 0;
+            padding: 5px;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #6c8aaf;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            border-radius: 5px;
+            border: 2px solid #b0c7e1;
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #e4b8b8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .error {
+            color: rgb(255, 0, 128);
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style> -->
+</head>
+<body>
+
+<div class="container">
+    <div class="tab">Login ( ๑•́ ᎔ ก̀๑ )</div>
+    <img src="hamter.jpeg" alt="Profile Picture" class="profile-pic">
+    <div class="input-group">
+        <label for="username">username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+    </div>
+    <div class="input-group">
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </div>
+    <a href="#" class="btn" onclick="validateLogin()">enter</a>
+    <div id="error-message" class="error"></div>
+</div>
+
+<script>
+    function validateLogin() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const errorMessage = document.getElementById('error-message');
+
+        if (username === 'liya' && password === '1234') {
+            window.location.href = 'profil.html';
+        } else {
+            errorMessage.textContent = 'Invalid username or password. Please try again.';
+        }
+    }
+</script>
+
+</body>
+</html>
